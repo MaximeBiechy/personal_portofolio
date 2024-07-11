@@ -1,0 +1,15 @@
+@use '../design_system/variables' as var;
+
+.site-footer {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--color-50);
+  text-align: center;
+
+  p {
+    font-size: map-get(var.$font-sizes, 'all-screens-body3');
+    font-weight: map-get(var.$font-weights, 'tablet-mobile-medium-body');
+    line-height: map-get(var.$line-heights, 'all-screens-body3');
+    color: var(--color-600);
+  }
+}

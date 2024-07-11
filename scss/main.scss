@@ -1,0 +1,29 @@
+@use 'design_system/variables' as var;
+/* Applying theme colors */
+@include var.theme-colors('light', var.$colors-light);
+@include var.theme-colors('dark', var.$colors-dark);
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Importing Partials */
+@import 'design_system/reset';
+@import 'design_system/typography';
+@import 'design_system/layout';
+@import 'design_system/theme';
+@import 'design_system/utilities';
+
+/* Importing Components */
+@import "_components/base";
+@import "_components/header";
+@import "_components/hero";
+@import "_components/about";
+@import "_components/skills";
+@import "_components/experience";
+@import "_components/work";
+@import "_components/testimonials";
+@import "_components/contact";
+@import "_components/footer";
+@import "_components/animations";
+@import "_components/media-queries";
+

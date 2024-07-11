@@ -1,0 +1,61 @@
+@use '../design_system/variables' as var;
+
+.experience {
+  background-color: var(--color-50);
+  width: 100%;
+  padding: 6rem 2rem;
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .experience-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5rem;
+      padding: 3rem;
+      background-color: var(--color-default);
+      border-radius: 12px;
+      box-shadow: map-get(var.$shadows, 'md');
+
+      .logo {
+        width: 100px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 50%;
+
+        h3 {
+          font-size: map-get(var.$font-sizes, 'all-screens-subtitle');
+          font-weight: map-get(var.$font-weights, 'tablet-mobile-semi-bold-body');
+          line-height: map-get(var.$line-heights, 'all-screens-subtitle');
+          color: var(--color-900);
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          li {
+            font-size: map-get(var.$font-sizes, 'all-screens-body2');
+            font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+            line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+            color: var(--color-600);
+          }
+        }
+      }
+
+      .periode {
+        font-size: map-get(var.$font-sizes, 'all-screens-body2');
+        font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+        line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+        color: var(--color-700);
+      }
+    }
+  }
+}

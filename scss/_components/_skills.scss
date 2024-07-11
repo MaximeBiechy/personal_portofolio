@@ -1,0 +1,35 @@
+@use '../design_system/variables' as var;
+
+.skills {
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: var(--color-default);
+
+  .technologies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+
+    .technology {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      span {
+        font-size: map-get(var.$font-sizes, 'all-screens-body1');
+        font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+        line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+        color: var(--color-600);
+      }
+    }
+  }
+}

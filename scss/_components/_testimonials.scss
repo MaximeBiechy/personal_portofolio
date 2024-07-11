@@ -1,0 +1,63 @@
+@use '../design_system/variables' as var;
+
+// Testimonials styles
+.testimonial {
+  width: 100%;
+  background-color: var(--color-50);
+  padding: 6rem 2rem;
+}
+
+.testimonials {
+  display: flex;
+  gap: 3rem;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  box-shadow: map-get(var.$shadows, 'lg');
+  border-radius: 12px;
+  padding: 3rem;
+  background-color: var(--color-default);
+  width: calc(100% / 3);
+
+  img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  p {
+    text-align: start;
+    font-size: map-get(var.$font-sizes, 'all-screens-body2');
+    font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+    line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+    color: var(--color-600);
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    span:first-of-type {
+      margin-bottom: 0.25rem;
+      color: var(--color-900);
+      font-size: map-get(var.$font-sizes, 'all-screens-subtitle');
+      font-weight: map-get(var.$font-weights, 'tablet-mobile-semi-bold-body');
+      line-height: map-get(var.$line-heights, 'all-screens-subtitle');
+    }
+
+    span:last-of-type {
+      color: var(--color-600);
+      font-size: map-get(var.$font-sizes, 'all-screens-body3');
+      font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+      line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+    }
+  }
+}

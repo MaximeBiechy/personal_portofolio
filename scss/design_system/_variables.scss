@@ -1,0 +1,110 @@
+/* Variables */
+
+/* Colors */
+$colors-light: (
+  'default': #ffffff,
+  '50': #f9fafb,
+  '100': #f3f4f6,
+  '200': #e5e7eb,
+  '300': #d1d5db,
+  '400': #9ca3af,
+  '500': #6b7280,
+  '600': #4b5563,
+  '700': #374151,
+  '800': #1f2937,
+  '900': #111827,
+  '950': #030712,
+);
+
+$colors-dark: (
+  'default': #030712,
+  '50': #111827,
+  '100': #1f2937,
+  '200': #374151,
+  '300': #4b5563,
+  '400': #6b7280,
+  '500': #9ca3af,
+  '600': #d1d5db,
+  '700': #e5e7eb,
+  '800': #f3f4f6,
+  '900': #f9fafb,
+  '950': #ffffff,
+);
+
+$color-emerald: #10b981;
+
+// Default Theme
+@mixin theme-colors($theme, $colors) {
+  body[data-theme='#{$theme}'] {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+    }
+  }
+}
+
+/* Fonts */
+$fonts: (
+  'family': 'Inter, sans-serif',
+);
+
+/* Font Sizes */
+$font-sizes: (
+  'desktop-h1': 3.75rem,
+  'desktop-h2': 2.25rem,
+  'desktop-h3': 1.875rem,
+  'tablet-h1': 3rem,
+  'mobile-h1': 2.25rem,
+  'tablet-mobile-h2': 1.125rem,
+  'tablet-mobile-h3': 1.5rem,
+  'tablet-mobile-subtitle': 1.125rem,
+  'tablet-mobile-body1': 1rem,
+  'all-screens-subtitle': 1.25rem,
+  'all-screens-body1': 1.125rem,
+  'all-screens-body2': 1rem,
+  'all-screens-body3': 0.875rem,
+);
+
+/* Font Weights */
+$font-weights: (
+  'desktop-h1': 700,
+  'desktop-h2': 600,
+  'desktop-h3': 600,
+  'tablet-h1': 700,
+  'mobile-h1': 600,
+  'tablet-mobile-h2': 600,
+  'tablet-mobile-h3': 600,
+  'tablet-mobile-medium-body': 500,
+  'tablet-mobile-semi-bold-body': 600,
+  'tablet-mobile-subtitle': 400,
+  'tablet-mobile-normal-body': 400,
+);
+
+/* Line Heights */
+$line-heights: (
+  'desktop-h1': 4.5rem,
+  'desktop-h2': 2.5rem,
+  'desktop-h3': 2.25rem,
+  'tablet-h1': 3rem,
+  'mobile-h1': 2.25rem,
+  'all-screens-subtitle': 1.75rem,
+  'all-screens-body1-2': 1.5rem,
+  'all-screens-body3': 1.25rem,
+);
+
+/* Letter Spacing */
+$letter-spacing: (
+  'desktop-h1': -0.125rem,
+  'desktop-h2': -0.125rem,
+  'desktop-h3': -0.125rem,
+  'tablet-h1': -0.125rem,
+  'tablet-mobile-h3': -0.125rem,
+);
+
+/* Shadows */
+/* Shadows */
+$shadows: (
+  'md': 0 4px 3px 0 rgba(0, 0, 0, 0.07),
+  'lg': 0 4px 3px 0 rgba(0, 0, 0, 0.1),
+  '2xl': 0 25px 25px 0 rgba(0, 0, 0, 0.15)
+);
+

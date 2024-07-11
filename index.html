@@ -6,16 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maxime Biechy | Student</title>
 
-  <link rel="stylesheet" href="css/design_system.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
   <!-- Métadonnées Open Graph pour les réseaux sociaux -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:title" content="Maxime Biechy | Full Stack Developer">
+  <meta property="og:type" content="website">
+  <!--  <meta property="og:url" content="https://www.example.com">-->
+  <!--  <meta property="og:image" content="https://www.example.com/images/og-image.jpg">-->
+  <meta property="og:image:alt" content="Maxime Biechy's Portfolio">
 
   <!-- Liens vers les icônes -->
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -26,15 +25,21 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<!-- En-tête du site -->
+<div class="backdrop" id="backdrop"></div> <!-- ! Fond flou pour le menu de navigation -->
+<!-- ! En-tête du site -->
 <header class="site-header-container">
   <div class="container">
     <div class="site-header">
       <div class="title">
-        <a href="#">&lt;SS /&gt;</a>
+        <a href="#">&lt;/&gt;</a>
+        <img src="icons/Name=icon-menu, Size=24, Theme Mode=Light.svg" alt="Burger menu Icon" id="menu-burger-icon" style="display: none;">
       </div>
       <!-- Conteneur pour les liens de navigation et les actions -->
       <nav class="navigation">
+        <div class="head">
+          <h3>&lt;/&gt;</h3 >
+          <img src="icons/Name=icon-close, Size=24, Theme Mode=Light.svg" alt="Close button Icon" id="close-button-icon">
+        </div>
         <!-- Liens de navigation -->
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -45,7 +50,7 @@
         <!-- Actions supplémentaires (mode sombre et téléchargement du CV) -->
         <div class="nav-actions">
           <button class="theme-toggle">
-            <img src="icons/Name=icon-dark-mode, Size=24, Theme Mode=Light.svg" alt="Toggle Theme">
+            <img src="icons/Name=icon-dark-mode, Size=24, Theme Mode=Light.svg" alt="Toggle Theme" id="theme-toggle">
           </button>
           <a class="download-cv" href="cv.pdf" download>Download CV</a>
         </div>
@@ -86,20 +91,22 @@
           </div>
           <!-- Liens vers les réseaux sociaux -->
           <div class="social-links">
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/MaximeBiechy" target="_blank">
               <img src="icons/Name=icon-github, Size=24, Theme Mode=Light.svg" alt="GitHub Icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-              <img src="icons/Name=icon-twitter, Size=24, Theme Mode=Light.svg" alt="Twitter Icon">
+            <a href="https://www.linkedin.com/in/maxime-biechy-1960962b1/" target="_blank">
+              <img src="icons/Name=icon-linkedin, Size=24, Theme Mode=Light.svg" alt="Linkedin Icon">
             </a>
-            <a href="https://figma.com" target="_blank">
-              <img src="icons/Name=icon-figma, Size=24, Theme Mode=Light.svg" alt="Figma Icon">
+            <a href="https://www.instagram.com/maxime_bch__/" target="_blank">
+              <img src="icons/Name=icon-instagram, Size=24, Theme Mode=Light.svg" alt="Figma Icon">
             </a>
           </div>
         </div>
         <!-- Partie droite contenant ma photo -->
         <div class="right-side">
-          <img src="img/me.jpg" alt="Photo of myself">
+          <div class="img-container">
+            <img src="img/me.jpg" alt="Photo of myself">
+          </div>
         </div>
       </div>
     </div>
@@ -111,7 +118,9 @@
       <p class="section-title">About Me</p>
       <div class="about-content">
         <div class="left-side">
-          <img src="img/me.jpg" alt="Photo of myself">
+          <div class="img-container">
+            <img src="img/moi.jpg" alt="Photo of myself">
+          </div>
         </div>
         <div class="right-side">
           <h3>Curious about me ? Here you have it: </h3>
@@ -139,6 +148,7 @@
             <li>Avid learner</li>
             <li>Aspiring indie hacker</li>
             <br>
+          <p>
             One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't
             bite 😉
           </p>
@@ -152,7 +162,7 @@
     <div class="container">
       <p class="section-title">Skills</p>
       <div class="skills-content">
-        <div class="title">
+        <div class="section-description">
           <p>The skills, tools and technologies I am really good at:</p>
         </div>
         <div class="technologies-container">
@@ -176,18 +186,18 @@
             <img src="icons/technologies/icon-nodejs.svg" alt="React.js Icon">
             <span>Node.js</span>
           </div>
-          <div class="technology">
-            <img src="icons/technologies/icon-express.svg" alt="Next.js Icon">
-            <span>Express.js</span>
-          </div>
+<!--          <div class="technology">-->
+<!--            <img src="icons/technologies/icon-express.svg" alt="Next.js Icon">-->
+<!--            <span>Express.js</span>-->
+<!--          </div>-->
           <div class="technology">
             <img src="icons/technologies/icon-nest.svg" alt="React.js Icon">
             <span>Nest.js</span>
           </div>
-          <div class="technology">
-            <img src="icons/technologies/icon-socket.svg" alt="Next.js Icon">
-            <span>Socket.io</span>
-          </div>
+          <!--          <div class="technology">-->
+          <!--            <img src="icons/technologies/icon-socket.svg" alt="Next.js Icon">-->
+          <!--            <span>Socket.io</span>-->
+          <!--          </div>-->
           <div class="technology">
             <img src="icons/technologies/icon-postgresql.svg" alt="React.js Icon">
             <span>PostgreSQL</span>
@@ -208,22 +218,263 @@
             <img src="icons/technologies/icon-figma.svg" alt="React.js Icon">
             <span>Figma</span>
           </div>
-          <div class="technology">
-            <img src="icons/technologies/icon-cypress.svg" alt="Next.js Icon">
-            <span>Cypress</span>
-          </div>
-          <div class="technology">
-            <img src="icons/technologies/icon-storybook.svg" alt="React.js Icon">
-            <span>Storybook</span>
-          </div>
+          <!--          <div class="technology">-->
+          <!--            <img src="icons/technologies/icon-cypress.svg" alt="Next.js Icon">-->
+          <!--            <span>Cypress</span>-->
+          <!--          </div>-->
+          <!--          <div class="technology">-->
+          <!--            <img src="icons/technologies/icon-storybook.svg" alt="React.js Icon">-->
+          <!--            <span>Storybook</span>-->
+          <!--          </div>-->
           <div class="technology">
             <img src="icons/technologies/icon-git.svg" alt="Next.js Icon">
             <span>Git</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!--! Section Experience-->
+  <section id="experience" class="experience">
+    <div class="container">
+      <p class="section-title">Experience</p>
+      <div class="experience-content">
+        <div class="section-description">
+          <p>Here is a quick summary of my most recent experiences:</p>
+        </div>
+        <div class="experiences">
+          <div class="experience-container">
+            <!-- Experience 1 -->
+            <div class="logo">
+              <img src="icons/company/Liebherr-Logo.svg" alt="Logo of the company">
+            </div>
+            <div class="content">
+              <h3>Full Stack Developer</h3>
+              <ul>
+                <li>
+                  Building and maintaining web applications using modern technologies such as React.js, Node.js, and
+                  PostgreSQL.
+                </li>
+                <li>
+                  Working closely with the design team to implement pixel-perfect designs.
+                </li>
+              </ul>
+            </div>
+            <div class="periode">
+              <span>June 2020 - Present</span>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="experience-container">
+            <div class="logo">
+              <img src="icons/company/Liebherr-Logo.svg" alt="Logo of the company">
+            </div>
+            <div class="content">
+              <h3>Full Stack Developer</h3>
+              <ul>
+                <li>
+                  Building and maintaining web applications using modern technologies such as React.js, Node.js, and
+                  PostgreSQL.
+                </li>
+                <li>
+                  Working closely with the design team to implement pixel-perfect designs.
+                </li>
+              </ul>
+            </div>
+            <div class="periode">
+              <span>June 2020 - Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Section Work-->
+  <section id="work" class="work">
+    <div class="container">
+      <p class="section-title">Work</p>
+      <div class="work-content">
+        <div class="section-description">
+          <p>Some of the noteworthy projects I have built:</p>
+        </div>
+        <div class="works">
+          <!-- Projet 1 -->
+          <div class="work-container">
+            <div class="left-side">
+              <a href="#work"><img src="icons/works/Picture.png" alt="Image project"></a>
+            </div>
+            <div class="right-side">
+              <h3>Project 1</h3>
+              <p>
+                A platform for comparing and finding affordable flights, as well as booking and purchasing tickets
+                safely and easily in a few simple clicks.
+              </p>
+              <div class="technologies">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Javscript</span>
+                <span>Typescript</span>
+                <span>Git</span>
+                <span>PostgreSQL</span>
+                <span>Sass/Scss</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+              </div>
+              <a href="#work"><img src="icons/Name=icon-external-link, Size=24, Theme Mode=Light.svg" alt="Share Icon"></a>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="work-container">
+            <div class="left-side">
+              <a href="#work"><img src="icons/works/Picture.png" alt="Image project"></a>
+            </div>
+            <div class="right-side">
+              <h3>Project 2</h3>
+              <p>
+                A platform for comparing and finding affordable flights, as well as booking and purchasing tickets
+                safely and easily in a few simple clicks.
+              </p>
+              <div class="technologies">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Javscript</span>
+                <span>Typescript</span>
+                <span>Git</span>
+                <span>PostgreSQL</span>
+                <span>Sass/Scss</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+              </div>
+              <a href="#work"><img src="icons/Name=icon-external-link, Size=24, Theme Mode=Light.svg" alt="Share Icon"></a>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="work-container">
+            <div class="left-side">
+              <a href="#work"><img src="icons/works/Picture.png" alt="Project Icon"></a>
+            </div>
+            <div class="right-side">
+              <h3>Project 3</h3>
+              <p>
+                A platform for comparing and finding affordable flights, as well as booking and purchasing tickets
+                safely and easily in a few simple clicks.</p>
+              <div class="technologies">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Javscript</span>
+                <span>Typescript</span>
+                <span>Git</span>
+                <span>PostgreSQL</span>
+                <span>Sass/Scss</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+              </div>
+              <a href="#work"><img src="icons/Name=icon-external-link, Size=24, Theme Mode=Light.svg" alt="Share Icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Section Testimonials-->
+  <section id="testimonials" class="testimonial">
+    <div class="container">
+      <p class="section-title">Testimonials</p>
+      <div class="testimonials-content">
+        <div class="section-description">
+          <p>Nice things people have said about me:</p>
+        </div>
+        <div class="testimonials">
+          <!-- Avis 1-->
+          <div class="testimonial-container">
+            <img src="img/me.jpg" alt="Photo of the person">
+            <p>"Maxime is a talented developer who is always willing to go the extra mile to ensure that the project is
+              completed to the highest standard."
+            </p>
+            <div class="author">
+              <span>John Doe</span>
+              <span>CEO, Company</span>
+            </div>
+          </div>
+          <!-- Avis 2-->
+          <div class="testimonial-container">
+            <img src="img/me.jpg" alt="Photo of the person">
+            <p>"Maxime is a talented developer who is always willing to go the extra mile to ensure that the project is
+              completed to the highest standard."
+            </p>
+            <div class="author">
+              <span>John Doe</span>
+              <span>CEO, Company</span>
+            </div>
+          </div>
+          <!-- Avis 3-->
+          <div class="testimonial-container">
+            <img src="img/me.jpg" alt="Photo of the person">
+            <p>"Maxime is a talented developer who is always willing to go the extra mile to ensure that the project is
+              completed to the highest standard."
+            </p>
+            <div class="author">
+              <span>John Doe</span>
+              <span>CEO, Company</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Section Contact-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <p class="section-title">Get in touch</p>
+      <div class="contact-content">
+        <div class="section-description">
+          <p>What’s next? Feel free to reach out to me if you are looking <br>for a developer, have a query, or simply
+            want
+            to connect.</p>
+        </div>
+        <div class="contact-infos">
+          <img src="icons/Name=icon-inbox, Size=32, Theme Mode=Light.svg" alt="Inbox Icon">
+          <a href="mailto:biechymaxime@gmail.com">biechymaxime@gmail.com</a>
+        </div>
+        <div class="contact-infos">
+          <img src="icons/Name=icon-phone, Size=32, Theme Mode=Light.svg" alt="Phone Icon">
+          <a href="tel:+330783423854">+33 07 83 42 38 54</a>
+        </div>
+        <p>You may also find me on these platforms!</p>
+        <div class="contact-icons">
+          <a href="https://github.com/MaximeBiechy" target="_blank">
+            <img src="icons/Name=icon-github, Size=24, Theme Mode=Light.svg" alt="GitHub Icon">
+          </a>
+          <a href="https://www.linkedin.com/in/maxime-biechy-1960962b1/" target="_blank">
+            <img src="icons/Name=icon-linkedin, Size=24, Theme Mode=Light.svg" alt="Linkedin Icon">
+          </a>
+          <a href="https://www.instagram.com/maxime_bch__/" target="_blank">
+            <img src="icons/Name=icon-instagram, Size=24, Theme Mode=Light.svg" alt="Figma Icon">
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
+
+<!-- ! Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>Design original par Sagar Shah. Adaptation réalisée par Maxime Biechy.
+      </p>
+    </div>
+  </div>
+</footer>
 
 <!-- Inclusion du script JavaScript -->
 <script src="js/app.js"></script>

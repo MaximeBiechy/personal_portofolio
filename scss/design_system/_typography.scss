@@ -1,0 +1,24 @@
+@use 'variables' as var;
+
+/* Typography */
+.section-title {
+  font-size: map-get(var.$font-sizes, 'all-screens-body3');
+  font-weight: map-get(var.$font-weights, 'tablet-mobile-subtitle');
+  line-height: map-get(var.$line-heights, 'all-screens-body3');
+  color: var(--color-600);
+  text-align: center;
+  background-color: var(--color-200);
+  border-radius: 12px;
+  padding: 0.25rem 1.25rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.section-description {
+  font-size: map-get(var.$font-sizes, 'tablet-mobile-subtitle');
+  font-weight: map-get(var.$font-weights, 'tablet-mobile-subtitle');
+  line-height: map-get(var.$line-heights, 'all-screens-subtitle');
+  color: var(--color-600);
+  text-align: center;
+  margin: 1.5rem 0 3rem 0;
+}
