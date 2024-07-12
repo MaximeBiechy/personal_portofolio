@@ -1,4 +1,5 @@
 @use '../design_system/variables' as var;
+@use './media-queries' as mq;
 
 .work {
   width: 100%;
@@ -105,5 +106,40 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: mq.$TabletMax) {
+  .work {
+    .works {
+      .work-container {
+        flex-direction: column;
+
+        .left-side,
+        .right-side {
+          width: 100%;
+          padding: 2rem;
+          border-radius: 0;
+        }
+
+        .left-side {
+          order: 1 !important;
+          img {
+            max-height: 240px;
+          }
+        }
+
+        .right-side {
+          order: 2 !important;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: mq.$Mobile) {
+  .work {
+    padding: 4rem 2rem;
   }
 }

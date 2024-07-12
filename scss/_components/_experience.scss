@@ -1,4 +1,5 @@
 @use '../design_system/variables' as var;
+@use './media-queries' as mq;
 
 .experience {
   background-color: var(--color-50);
@@ -55,6 +56,56 @@
         font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
         line-height: map-get(var.$line-heights, 'all-screens-body1-2');
         color: var(--color-700);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: mq.$TabletMin) and (max-width: mq.$TabletMax) {
+  .experience {
+    .experiences {
+      .experience-container {
+        margin: 0 2rem;
+
+        .content {
+          h3 {
+            font-size: map-get(var.$font-sizes, 'tablet-mobile-h2');
+            font-weight: map-get(var.$font-weights, 'tablet-mobile-semi-bold-body');
+            line-height: map-get(var.$line-heights, 'all-screens-body1-2');
+          }
+        }
+
+        .periode {
+          font-size: map-get(var.$font-sizes, 'all-screens-body3');
+          line-height: map-get(var.$line-heights, 'all-screens-body3');
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: mq.$Mobile) {
+  .experience {
+    .experiences {
+      .experience-container {
+        flex-direction: column;
+        margin: 0 1.5rem;
+        padding: 2rem;
+
+        .logo {
+          order: 1 !important;
+        }
+
+        .content {
+          max-width: 100%;
+          order: 3 !important;
+        }
+
+        .periode {
+          margin: 1rem 0;
+          order: 2 !important;
+
+        }
       }
     }
   }

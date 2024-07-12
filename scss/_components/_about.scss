@@ -1,4 +1,5 @@
 @use '../design_system/variables' as var;
+@use './media-queries' as mq;
 
 .about {
   background-color: var(--color-50);
@@ -13,7 +14,6 @@
 
     .left-side {
       position: relative;
-      margin-right: 40px;
 
       .img-container {
         position: relative;
@@ -25,15 +25,16 @@
           max-width: 100%;
           height: auto;
           border: solid 0.5rem var(--color-50);
+          z-index: 2;
         }
 
         &::before {
           content: '';
           position: absolute;
           top: 40px;
-          left: -40px;
+          right: -40px;
+          bottom: -40px;
           width: 100%;
-          height: 100%;
           background-color: var(--color-200);
         }
       }
@@ -64,4 +65,45 @@
       }
     }
   }
+}
+
+@media screen and (max-width: mq.$TabletMax) {
+  .about {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+
+      .left-side {
+        order: 1 !important;
+        margin-bottom: 3rem;
+
+        .img-container {
+          max-width: max-content;
+
+          &::before {
+            top: 40px;
+            left: -10px;
+            bottom: -10px;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -10px;
+            bottom: -10px;
+            width: 100%;
+            background-color: var(--color-200);
+          }
+
+        }
+      }
+
+      .right-side {
+        order: 2 !important;
+        max-width: 100%;
+      }
+    }
+  }
+
 }
