@@ -366,6 +366,7 @@ textarea {
   z-index: 1000;
   width: 100dvw;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .site-header {
