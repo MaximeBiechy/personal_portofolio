@@ -1,4 +1,5 @@
 @use 'design_system/variables' as var;
+
 /* Applying theme colors */
 @include var.theme-colors('light', var.$colors-light);
 @include var.theme-colors('dark', var.$colors-dark);

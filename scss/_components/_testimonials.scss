@@ -36,6 +36,7 @@
 
   p {
     text-align: start;
+    text-wrap: wrap;
     font-size: map-get(var.$font-sizes, 'all-screens-body2');
     font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
     line-height: map-get(var.$line-heights, 'all-screens-body1-2');
@@ -69,6 +70,9 @@
   .testimonial {
     padding: 6rem 1rem;
 
+    .testimonials {
+      grid-template-columns: 1fr;
+    }
     .testimonial-container {
       padding: 1rem;
 

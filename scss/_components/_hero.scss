@@ -179,9 +179,9 @@
         }
 
         p {
-          font-size: map-get(var.$font-sizes, 'mobile-body1');
-          font-weight: map-get(var.$font-weights, 'mobile-body1');
-          line-height: map-get(var.$line-heights, 'mobile-body1');
+          font-size: map-get(var.$font-sizes, 'all-screens-body1-2');
+          font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
+          line-height: map-get(var.$line-heights, 'all-screens-body1-2');
         }
       }
 
