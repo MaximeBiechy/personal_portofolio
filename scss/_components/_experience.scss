@@ -21,7 +21,9 @@
       box-shadow: map-get(var.$shadows, 'md');
 
       .logo {
-        width: 100px;
+        img {
+          width: 100px;
+        }
       }
 
       .content {
@@ -56,6 +58,8 @@
         font-weight: map-get(var.$font-weights, 'tablet-mobile-normal-body');
         line-height: map-get(var.$line-heights, 'all-screens-body1-2');
         color: var(--color-700);
+        width: 200px;
+        text-align: right;
       }
     }
   }

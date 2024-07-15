@@ -901,7 +901,7 @@ textarea {
   border-radius: 12px;
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.07);
 }
-.experience .experiences .experience-container .logo {
+.experience .experiences .experience-container .logo img {
   width: 100px;
 }
 .experience .experiences .experience-container .content {
@@ -932,6 +932,8 @@ textarea {
   font-weight: 400;
   line-height: 1.5rem;
   color: var(--color-700);
+  width: 200px;
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
