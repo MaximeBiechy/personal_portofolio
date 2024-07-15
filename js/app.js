@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Call functions
+  resetNavDisplay();
   applyPreferredTheme();
   updateIconFilters();
 
