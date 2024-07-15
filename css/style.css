@@ -966,6 +966,7 @@ textarea {
   .experience .experiences .experience-container .periode {
     margin: 1rem 0;
     order: 2 !important;
+    text-align: left;
   }
 }
 /* Variables */
