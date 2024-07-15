@@ -12,4 +12,11 @@
     line-height: map-get(var.$line-heights, 'all-screens-body3');
     color: var(--color-600);
   }
+
+  a {
+    color: var(--color-900);
+    font-size: map-get(var.$font-sizes, 'all-screens-body3');
+    font-weight: map-get(var.$font-weights, 'tablet-mobile-medium-body');
+    line-height: map-get(var.$line-heights, 'all-screens-body3');
+  }
 }

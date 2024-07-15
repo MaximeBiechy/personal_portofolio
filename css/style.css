@@ -1292,6 +1292,12 @@ textarea {
   line-height: 1.25rem;
   color: var(--color-600);
 }
+.site-footer a {
+  color: var(--color-900);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
 
 @keyframes bubble {
   0% {
