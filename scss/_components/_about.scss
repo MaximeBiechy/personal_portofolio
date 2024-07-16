@@ -46,7 +46,7 @@
       gap: 1rem;
       max-width: 50%;
 
-      h3 {
+      h1 {
         font-size: map-get(var.$font-sizes, 'desktop-h3');
         font-weight: map-get(var.$font-weights, 'desktop-h3');
         line-height: map-get(var.$line-heights, 'desktop-h3');
@@ -104,7 +104,7 @@
         max-width: 100%;
 
 
-        h3 {
+        h1 {
           font-size: map-get(var.$font-sizes, 'tablet-mobile-h3');
           font-weight: map-get(var.$font-weights, 'tablet-mobile-h3');
           line-height: map-get(var.$line-heights, 'tablet-mobile-h3');

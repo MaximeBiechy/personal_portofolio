@@ -763,7 +763,7 @@ textarea {
   gap: 1rem;
   max-width: 50%;
 }
-.about .about-content .right-side h3 {
+.about .about-content .right-side h1 {
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 2.25rem;
@@ -808,7 +808,7 @@ textarea {
     order: 2 !important;
     max-width: 100%;
   }
-  .about .about-content .right-side h3 {
+  .about .about-content .right-side h1 {
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -910,7 +910,7 @@ textarea {
   gap: 1rem;
   max-width: 50%;
 }
-.experience .experiences .experience-container .content h3 {
+.experience .experiences .experience-container .content h1 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
@@ -940,7 +940,7 @@ textarea {
   .experience .experiences .experience-container {
     margin: 0 2rem;
   }
-  .experience .experiences .experience-container .content h3 {
+  .experience .experiences .experience-container .content h1 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -1037,7 +1037,7 @@ textarea {
 .work .works .work-container .right-side img:hover {
   background-color: var(--color-100);
 }
-.work .works .work-container h3 {
+.work .works .work-container h1 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
