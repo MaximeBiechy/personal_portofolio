@@ -25,8 +25,8 @@ const LogoUniversityLorraine = document.getElementById('LogoUniversityLorraine')
 
 function updateThemeIcon() {
   themeToggleIcon.src = document.body.classList.contains('dark-theme') ?
-    'icons/Name=icon-light-mode, Size=24, Theme Mode=Dark.svg' :
-    'icons/Name=icon-dark-mode, Size=24, Theme Mode=Light.svg';
+    'assets/icons/Name=icon-light-mode, Size=24, Theme Mode=Dark.svg' :
+    'assets/icons/Name=icon-dark-mode, Size=24, Theme Mode=Light.svg';
 }
 
 function updateImageSources() {
