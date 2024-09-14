@@ -1,3 +1,3 @@
 # Personal Portolio
 
-https://maximebiechy.netlify.app/
+https://maximebiechy.fr
