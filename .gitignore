@@ -12,4 +12,3 @@ build/
 cache/
 *.log
 .editorconfig
-cv.pdf
