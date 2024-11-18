@@ -1,0 +1,65 @@
+{
+  "title": "Maxime Biechy | Student",
+  "metaDescription": "Portfolio of Maxime Biechy, showcasing web development projects, including responsive startup websites, eCommerce sites, and property landing pages.",
+  "ogTitle": "Maxime Biechy | Full Stack Developer",
+
+  "headerAbout": "About",
+  "headerWork": "Work",
+  "headerContact": "Contact",
+  "downloadCv": "Download CV",
+
+  "heroTitle": "Hi, I'm Maxime 👋",
+  "heroDescription": "I am a student in full stack development eager to gain practical experience by working on real-world projects. I am looking to collaborate on projects to enhance my skills and build a diverse portfolio. My goal is to create quality, visually appealing, and user-friendly web applications while learning and growing as a developer.",
+  "location": "Colmar, France",
+  "availableForWork": "Available",
+
+  "aboutTitle": "About Me",
+  "aboutDescriptionTitle": "Curious about me ? Here you have it:",
+  "aboutDescription": "I'm currently in my third year of Computer Science studies, with a deep passion for web and mobile development. My journey began with a solid foundation in CSS through an intensive course on Udemy. During my professional experience, I had the opportunity to redesign the intranet of a company, enhancing user experience and functionality.<br><br>In addition to these projects, I've crafted several showcase examples, including responsive startup websites, eCommerce platforms, and property landing pages, which highlight my proficiency in web development. I'm particularly enthusiastic about Flutter for mobile app development and enjoy leveraging technologies like SASS/SCSS and JavaScript to create intuitive and visually appealing websites.<br><br>Beyond coding, I find joy in witnessing projects evolve from inception to fruition. When I'm not immersed in the digital world, you'll find me outdoors, pursuing my love for sports like running and hiking in the scenic landscapes near Colmar, Alsace.<br><br>My goal is to establish myself as a freelance developer, offering innovative solutions and collaborating on diverse projects. If you're looking to collaborate or just want to connect, feel free to reach out. I'm always eager to explore new opportunities!<br><br>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉",
+
+  "skillsTitle": "Skills",
+  "skillsDescription": "The skills, tools and technologies I like to use:",
+
+  "experienceTitle": "Experience",
+  "experienceDescription": "Here is a quick summary of my most recent experiences:",
+  "experienceLiebherr": {
+    "title": "Full Stack Developer",
+    "tasks": {
+      "first": "Rebuilt the company's intranet to improve user experience and functionality, integrating modern technologies.",
+      "second": "Collaborated closely with employees to gather requirements and feedback, ensuring the solutions met their needs."
+    },
+    "periode": "February 2024 - Mai 2024"
+  },
+  "experienceSchool": {
+    "title": "Computer Science Student",
+    "tasks": {
+      "first": "Engaged in various computer science projects with a focus on integrating modern technologies.",
+      "second": "Collaborated with fellow students to develop computer science solutions."
+    },
+    "periode": "September 2021 - Present"
+  },
+
+  "workTitle": "Work",
+  "workDescription": "Some of the projects I have built:",
+
+  "work1": {
+    "title": "Responsive Startup Website Project Exemple",
+    "description": "This project is an example of a startup website, designed for visual demonstration purposes only. It does not contain actual content, but is intended to illustrate the visual potential and functionality of a responsive website."
+  },
+  "work2": {
+    "title": "eCommerce Website Project Exemple",
+    "description": "This eCommerce website project exemplifies my proficiency in web development. Utilizing a Figma mockup, the site prioritizes intuitive navigation and a visually appealing interface."
+  },
+  "work3": {
+    "title": "Property Landing Website Project Exemple",
+    "description": "This real estate project landing page is designed for visual purposes only to demonstrate my web development skills."
+  },
+
+  "testimonialTitle": "Coming ...",
+
+  "contactTitle": "Get in touch",
+  "contactDescription": "What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.",
+  "contactLinks": "You may also find me on these platforms!",
+
+  "footerDescription": "Coded"
+}
