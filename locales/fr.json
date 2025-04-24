@@ -14,14 +14,14 @@
   "availableForWork": "Disponible",
 
   "aboutTitle": "À propos de moi",
-  "aboutDescriptionTitle": "Curieux de moi ? Voici:",
+  "aboutDescriptionTitle": "Curieux de moi ? Voici",
   "aboutDescription": "Je suis actuellement en troisième année d'études en informatique, avec une passion profonde pour le développement web et mobile. Mon parcours a commencé avec une solide base en CSS grâce à une formation intensive sur Udemy. Pendant mon expérience professionnelle, j'ai eu l'opportunité de refondre l'intranet d'une entreprise, améliorant l'expérience utilisateur et les fonctionnalités.<br><br>En plus de ces projets, j'ai réalisé plusieurs exemples de démonstration, y compris des sites startups réactifs, des plateformes e-commerce et des pages de présentation immobilière, mettant en avant mes compétences en développement web. Je suis particulièrement enthousiaste à propos de Flutter pour le développement d'applications mobiles et j'aime utiliser des technologies comme SASS/SCSS et JavaScript pour créer des sites intuitifs et visuellement attrayants.<br><br>Au-delà du codage, j'aime voir les projets évoluer de l'idée à la réalisation. Quand je ne suis pas plongé dans le monde numérique, vous me trouverez à l'extérieur, pratiquant des sports comme la course à pied et la randonnée dans les paysages montagneux près de Colmar, en Alsace.\n\nMon objectif est de m'établir comme développeur freelance, offrant des solutions innovantes et collaborant sur des projets variés. Si vous cherchez à collaborer ou simplement à échanger, n'hésitez pas à me contacter. Je suis toujours curieux de découvrir de nouvelles opportunités !<br><br>Une dernière chose, je suis disponible pour des missions freelance, alors n'hésitez pas à me dire bonjour ! Promis, je ne mords pas 😉",
 
   "skillsTitle": "Compétences",
-  "skillsDescription": "Les compétences, outils et technologies que j'aime utiliser:",
+  "skillsDescription": "Les compétences, outils et technologies que j'aime utiliser",
 
   "experienceTitle": "Expériences",
-  "experienceDescription": "Voici un résumé rapide de mes expériences les plus récentes :",
+  "experienceDescription": "Voici un résumé rapide de mes expériences les plus récentes",
   "experienceLiebherr": {
     "title": "Développeur Full Stack",
     "tasks": {
@@ -40,7 +40,7 @@
   },
 
   "workTitle": "Travaux",
-  "workDescription": "Certains des projets que j'ai fait :",
+  "workDescription": "Certains des projets que j'ai fait",
   "work1": {
     "title": "Exemple de projet de site Web de startup réactif",
     "description": "Ce projet est un exemple de site Web de startup, conçu à des fins de démonstration visuelle uniquement. Il\\n ne contient pas de contenu réel, mais est destiné à illustrer le potentiel visuel et les fonctionnalités d'un site Web réactif."
